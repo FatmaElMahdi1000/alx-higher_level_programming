@@ -9,5 +9,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
     elif length2 < 2:
         tuple_b.append(0)
     else:
-        t=((tuple_a[0]) + (tuple_b[0])), ((tuple_a[1]) + (tuple_b[1]))
+        t = ((tuple_a[0]) + (tuple_b[0])), ((tuple_a[1]) + (tuple_b[1]))
         return t
