@@ -7,4 +7,3 @@ def no_c(my_string):
             continue
         string = my_string[i]
         return string
-
