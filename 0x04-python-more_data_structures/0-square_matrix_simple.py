@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-def square_matrix_simple(matrix = []):
-    return [[x * x for x in num] for num in matrix]
+def square_matrix_simple(matrix=[]):
+    return ([list(map(lambda x: x * x, num)) for row in num])
