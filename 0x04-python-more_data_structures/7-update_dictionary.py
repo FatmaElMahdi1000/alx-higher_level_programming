@@ -8,5 +8,5 @@ def update_dictionary(a_dictionary, key, value):
     else:
         for N in a_dictionary:
             if N == key:
-                a_dictionary[N] = [value]
+                a_dictionary[N] = value
     return a_dictionary
