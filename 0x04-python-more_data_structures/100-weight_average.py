@@ -4,7 +4,7 @@ def weight_average(my_list=[]):
     New_list1 = []
     New_list2 = []
     if my_list == []:
-        return {}.format()
+        return 0
     for i, value in enumerate(my_list):
         value1 = value[0]
         value2 = value[1]
