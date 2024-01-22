@@ -8,3 +8,4 @@ def safe_print_list(my_list=[], x=0):
             N += 1
     except IndexError:
         pass
+    return N
