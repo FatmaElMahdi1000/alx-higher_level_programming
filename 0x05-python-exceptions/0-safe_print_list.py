@@ -7,5 +7,5 @@ def safe_print_list(my_list=[], x=0):
             print(my_list[N], end="")
             N += 1
     except IndexError:
-        pass
-    return N
+        None
+        return N
