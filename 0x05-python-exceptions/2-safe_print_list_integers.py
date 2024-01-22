@@ -6,9 +6,9 @@ def safe_print_list_integers(my_list=[], x=0):
         for x, value in enumerate(my_list):
             if isinstance(value, str):
                 continue
-            print("{}".format(value))
+            print("{:d}".format(value))
             print(end="")
-    except IndexError:
+    except (TypeError, IndexError):
         while x in my_list:
             return (x)
             x += 1
