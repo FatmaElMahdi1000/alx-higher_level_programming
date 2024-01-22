@@ -2,9 +2,9 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     M = 0
-    for i, value in enumerate(range(0, x)):
+    for i in range(0, x)):
         try:
-            print("{:d}".format(value), end="")
+            print("{:d}".format(my_list[i]), end="")
             M += 1
         except (TypeError, IndexError):
             continue
