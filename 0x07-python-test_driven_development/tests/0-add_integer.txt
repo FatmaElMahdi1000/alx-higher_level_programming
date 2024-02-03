@@ -1,0 +1,24 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+import function from module:
+
+   >>> add_integer = __import__('0-add_integer').add_integer
+
+Testing getting only one int:
+
+   >>> add_integer(4)
+   102
+
+Testing getting one argument as negative number:
+
+   >>> add_integer(-1)
+   97
+
+Testing getting a character:
+
+   >>> add_integer('s')
+   must be an integer
