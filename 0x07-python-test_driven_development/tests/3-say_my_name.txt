@@ -1,0 +1,24 @@
+# 3-say_my_name.txt
+
+=============
+Using 3-say_my_name.txt
+==================
+
+this module defines a function ``say_my_name(first_name, last_name="")``.
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Fatma", "ElMahdi")
+my name is Fatma ElMahdi
+
+>>> say_my_name(" ", " ")
+my name is
+
+>>> say_my_name(3, 2)
+first_name must be a string
+
+>>> say_my_name(3, "ElMahdi")
+first_name must be a string
+
+>>> say_my_name("Fatma", 3)
+last_name must be a string
