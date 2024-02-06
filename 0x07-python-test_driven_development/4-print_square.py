@@ -22,8 +22,3 @@ def print_square(size):
     for _ in range(size):
         row = "#" * size
         print(row)
-
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("tests/4-print_square.txt")
