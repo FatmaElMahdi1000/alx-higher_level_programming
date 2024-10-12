@@ -1,15 +1,21 @@
 #!/usr/bin/python3
 """
 Creating Rectangle class
+
+claculating area and perimeter
 """
 
 
 class Rectangle:
+    """
+    Rectangle class
+    """
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
-    @property """property allows using private attribure outside the class"""
+    @property
     def width(self):
         return self.__width
 
@@ -44,5 +50,5 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            result2 = int(self.__width * self.__height) * 2
-            return result2
+            result2 = (2 * self.__width) + (self.__height * 2)
+           return result2
