@@ -50,4 +50,5 @@ class Rectangle:
             return " "
 
         for i in range(self.__height):
-            print("#" * self.__width)
+            rect_lines = "#" * self.__width
+            return "\n".join(rect_lines)
