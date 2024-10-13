@@ -50,12 +50,5 @@ class Rectangle:
             for i1 in range(self.__height):
                 rect.append("#" * self.__width)
                 return "\n".join(rect)
-
     def __repr__(self):
-        if self.__width == 0 or self.__height == 0:
-            return " "
-        else:
-            rect = []
-            for i2 in range(rect):
-                rect.append('#' * self.__width)
-                return '\n'.join(rect)
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
