@@ -8,7 +8,7 @@ Rectangle
 class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
-        self.height = height 
+        self.height = height
 
     @property
     def width(self):
@@ -29,7 +29,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("height must be an integer") 
+            raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
@@ -44,9 +44,18 @@ class Rectangle:
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
-            return ""
-        return "\n".join(["#" * self.__width for _ in range(self.__height)])
+            return " "
+        else:
+            rect = []
+            for i1 in range(self.__height):
+                rect.append("#" * self.__width)
+                return "\n".join(rect)
 
     def __repr__(self):
-        return f"Rectangle({self.__width}, {self.__height})"
-
+        if self.__width == 0 or self.__height == 0:
+            return " "
+        else:
+            rect = []
+            for i2 in range(rect):
+                rect.append('#' * self.__width)
+                return '\n'.join(rect)
