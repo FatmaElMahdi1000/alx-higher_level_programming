@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-A class for sorting number 
+A class for sorting number
 """
+
 
 class MyLis(list):
     def __init__(self, number):
