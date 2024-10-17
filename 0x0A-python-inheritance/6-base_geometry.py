@@ -16,4 +16,4 @@ def BaseGeometry:
         """
         Raises an Exception with the message area() is not implemented.
         """
-        raise Exception(f"area() is not implemented")
+        raise Exception("area() is not implemented")
