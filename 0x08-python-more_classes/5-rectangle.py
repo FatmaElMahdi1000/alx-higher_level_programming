@@ -70,9 +70,9 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            rows = []
+            rows = ""
             for _ in range(self.__height):
-                rows.append("#" * self.__width)
+                rows += "#" * self.__width
                 return "\n".join(rows)
 
     def __repr__(self):
