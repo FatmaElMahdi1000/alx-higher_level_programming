@@ -14,6 +14,7 @@ class Rectangle:
     height (int): The height of the rectangle.
     number_of_instances (int): The number of instances of Rectangle.
     """
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -23,7 +24,7 @@ class Rectangle:
 
     @property
     def width(self):
-        self.__width = width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -35,7 +36,7 @@ class Rectangle:
 
     @propert
     def height(self):
-        self.__height = height
+        return self.__height
 
     @height.setter
     def height(self, value):
