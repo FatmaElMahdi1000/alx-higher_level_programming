@@ -34,6 +34,6 @@ class Square:
     def my_print(self):
         """Print the square with the # character."""
         for i in range(self.__size):
-            return "#" * self.__size 
+            return "#" * self.__size
         if self.__size == 0:
             print("")
