@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+
 class Rectangle that defines a rectangle
 
 """
@@ -18,16 +19,19 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
+        """Initialize a new Rectangle instance."""
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
 
     @property
     def width(self):
+        """Get the width of the rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """Set the width of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -36,10 +40,12 @@ class Rectangle:
 
     @propert
     def height(self):
+        """Get the height of the rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """Set the height of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if height < 0:
@@ -47,10 +53,12 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """Return the area of the rectangle."""
         result = self.__width * self.__height
         return result
 
     def perimeter(self):
+        """Return the perimeter of the rectangle."""
         if (self.__width == 0 or self.__height == 0):
             return 0
         else:
@@ -58,6 +66,7 @@ class Rectangle:
             return result
 
     def __str__(self):
+        """Return a string representation of the rectangle using '#' """
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
@@ -67,8 +76,10 @@ class Rectangle:
                 return "\n".join(rows)
 
     def __repr__(self):
+        """Return a string representation of the rectangle."""
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
+        """Print a message when a rect. instance is deleted """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
