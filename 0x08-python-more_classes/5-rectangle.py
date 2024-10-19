@@ -2,7 +2,6 @@
 """
 
 class Rectangle that defines a rectangle
-
 """
 
 
@@ -11,9 +10,10 @@ class Rectangle:
     A class to represent a rectangle.
 
     Attributes:
-    width (int): The width of the rectangle.
-    height (int): The height of the rectangle.
-    number_of_instances (int): The number of instances of Rectangle.
+        width (int): The width of the rectangle.
+        height (int): The height of the rectangle.
+        number_of_instances (int): The number of instances of Rectangle.
+
     """
 
     number_of_instances = 0
@@ -38,7 +38,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @propert
+    @property
     def height(self):
         """Get the height of the rectangle."""
         return self.__height
